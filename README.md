@@ -69,9 +69,24 @@ CMD ["python", "app.py"]
 
 
 1. Preparing Two Flask Applications:
+
+   
    I set up two different folders entitled flask1 and flask2. For flask1, my flaskapp tells you the date. For flask2, the flaskapp tells you the time including the date and time using seconds.
 
+Date - connected and updates (loads to the date) 
+
+<img width="480" alt="Screen Shot 2023-11-21 at 1 40 18 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/5201f1d0-43cd-4b87-bab6-9523cf381eff">
+
+Time- connected and updates 
+<img width="1013" alt="Screen Shot 2023-11-21 at 1 41 32 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/fbf77bf3-a618-4768-a3a8-1d0bf3a53294">
+
+Once I made sure my flaskapps were running correctly and there were no connection errors, I did docker-compose up --build.
+
 <img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
+
+But for some reason, it wasnt saying running on all addresses. Instead showed one address and there were also some errors with the requirements files. I had gone into the Dockerfile and changed it into reuirements1 and requirements 2 to match the apps, however it was not being recognized and the apps were not running simultaneously.
+From here,I made sure that my files were properly organized and neatly named so as to not run into this issue again. Once I changed those everything ran smoothly and as it should. 
+
 
 <img width="988" alt="Screen Shot 2023-11-21 at 1 38 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/f948dcf5-f2de-4d22-ba4e-05b614460cd1">
 
@@ -79,12 +94,6 @@ CMD ["python", "app.py"]
 docker-compose up 
 <img width="1017" alt="Screen Shot 2023-11-21 at 1 40 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/87814790-cdf2-4de5-a9e3-67f6776e0961">
 
-
-Date - connected and updates (loads to the date) 
-<img width="480" alt="Screen Shot 2023-11-21 at 1 40 18 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/5201f1d0-43cd-4b87-bab6-9523cf381eff">
-
-Time- connected and updates 
-<img width="1013" alt="Screen Shot 2023-11-21 at 1 41 32 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/fbf77bf3-a618-4768-a3a8-1d0bf3a53294">
 
 
 More commands:
