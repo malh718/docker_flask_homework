@@ -18,5 +18,5 @@ services:
     ports:
       - "7002:5000"
     volumes:
-# Flask 2 and app are linked together, which means anything happens in one will be mirrored in the other.
+# Flask 2 and app are linked together , which means anything happens in one will be mirrored in the other.
       - ./flask2:/app
