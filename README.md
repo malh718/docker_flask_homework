@@ -16,6 +16,10 @@ In order to do this, I had to create my app.py run it and all other files(docker
 In this case my image is called maliha7 and a simple error I made in this was initially not adding my space period ( .) after
 
 Subsequently, docker images shows me the image and to run I made sure I was in the correct port and ran the container with the code docker run -p 8005:5000 maliha7. 
+
+A simple error I initally made was by having it was just -p and not including -d. In order to create that container, you have to include the -d which I did down below. 
+
+
 <img width="872" alt="Screen Shot 2023-11-20 at 10 21 15 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/244eaf66-10ad-4359-9ac2-0921ca042fa5">
 
 It succesfully ran and is accessible locally and I ensure this by changing my port to 8005. And here it says "Hello, this is the docker homework! From a Flask app in a Docker container!"
