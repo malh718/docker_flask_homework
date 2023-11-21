@@ -5,9 +5,10 @@
 
 1. Setting Up and Dockerizing a Flask App:
    
-First, create your repo, clone it into shell and cd into the correct window. For me it was docker_flask_homework.I went on to make sure the app.py had the code needed for the flask as well as my requirements had flask and my Dockerfile was set up properly so it could containerize the image. Comments are added as well as shown below explaining the dockerfile. 
+First, create your repo, clone it into shell and cd into the correct window. For me it was docker_flask_homework. I went on to make sure the app.py had the code needed for the flask as well as my requirements had flask and my Dockerfile was set up properly so it could containerize the image. Comments are added as well as shown below explaining the dockerfile. 
 
-I went on to build my dockerimage named maliha7$
+I went on to build my dockerimage named maliha7
+
 <img width="572" alt="Screen Shot 2023-11-20 at 10 27 07 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/05031940-7a4d-404f-b201-19147a21c1f5">
 
 
@@ -49,17 +50,17 @@ You can confirm that it has stopped by doing docker ps, and it will show you no 
 
 
 These are the contents of my Dockerfile and comments.
-### This is the base image which comes from python and uses version 3.7. 
+#### This is the base image which comes from python and uses version 3.7. 
 FROM python:3.7-alpine
-### this sets the working directory as /app. 
+#### this sets the working directory as /app. 
 WORKDIR /app
-### copies what is in the directory into app container
+#### copies what is in the directory into app container
 COPY . /app
-### installs requirements file we need to run this, we have flask in our .txt
+#### installs requirements file we need to run this, we have flask in our .txt
 RUN pip install -r requirements.txt
-### Makes port 5000 open and accesible
+#### Makes port 5000 open and accesible
 EXPOSE 5000
-### CMD signifies the commands needed to run, in this case we are using python in our app.py file
+#### CMD signifies the commands needed to run, in this case we are using python in our app.py file
 CMD ["python", "app.py"]
 
 
