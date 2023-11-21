@@ -70,8 +70,7 @@ CMD ["python", "app.py"]
 
 1. Preparing Two Flask Applications:
 
-   
-   I set up two different folders entitled flask1 and flask2. For flask1, my flaskapp tells you the date. For flask2, the flaskapp tells you the time including the date and time using seconds.
+In my same Docker_flask_homework, I created two folders. I set up two different folders entitled flask1 and flask2. For flask1, my flaskapp tells you the date. For flask2, the flaskapp tells you the time including the date and time using seconds.
 
 Date - connected and updates (loads to the date) 
 
@@ -86,7 +85,7 @@ Once I made sure my flaskapps were running correctly and there were no connectio
 
 <img width="701" alt="Screen Shot 2023-11-21 at 2 13 04 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/f524b02a-e1cd-41ff-a174-1e2b1af33e0b">
 
-And to get out of this, you do control c ( ^C) which will exit the applications.
+And to get out of this, you do control c ( ^C) which will allow you to exit.
 <img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
 
 
@@ -119,6 +118,32 @@ This was a screenshot taken prior to me closing the apps down. Nice, up and runn
 I entered docker-compose down, it cannot connect! The apps are down. 
 <img width="965" alt="Screen Shot 2023-11-21 at 1 59 27 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/7056cfc2-7495-4364-bb45-3d9d4b59fa51">
 
+Errors:
+Other than the errors I faced above, one thing that I would emphasize is making sure all your folders and files are being organized properly and named correctly. It is at this point when things are getting more complicated and there are multiple moving parts, that you have to ensure there are no silly errors and that the code aligns with what the items are named so as to not waste time over simple mistakes. 
 
 
 
+#### this is running on version 3 of Docker Compose 
+version: '3'
+services:
+#### these represent the containers. In this .yaml file the containers are flask_app_1 and flask_app_2.
+  flask_app_1:
+#### The build is meant to represent the Docker image, entitled flask1
+    build: ./flask1
+    # These show the ports. The host port is the one with the app, so for flask one its 7001.The container is 5000.
+    ports:
+      - "7001:5000"
+    volumes:
+    # This links the flask1 and app, with the container and host.
+      - ./flask1:/app
+  flask_app_2:
+    build: ./flask2
+      # These show the ports. The host port is the one with the app, so for flask2 its 7002. We can access port 5000 using this port. 
+
+    ports:
+      - "7002:5000"
+    volumes:
+#### Flask 2 and app are linked together, which means anything happens in one will be mirrored in the other.
+      - ./flask2:/app
+
+This was my first time using both Docker and Docker Compose,  while initially it looked challenging, they both were similar in their commands. I would say an important nuance to watch out for is for compose, the commands will include docker-compose. For Docker, while docker is still present to run you may need to add a -t and include a name. So there are more steps and more aspects of the code that you would need to recognize and know for Docker. One of the glaring differences is that Docker compose allows you to use more than one container, whereas with Docker you must create them one at a time. Also docker-compose requires a .yaml. That is not necessary for Docker. Also present in the .yaml for Docker-compose is a volumes, builds and services which are all things not mentioned in Docker. Despite being similar, Docker focuses on singular containers and they are both relatively straightforward to use. 
