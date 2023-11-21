@@ -1,9 +1,6 @@
 # docker_flask_homework
 
-# Part 1
-
-
-
+##  Part 1
 
 
 1. Setting Up and Dockerizing a Flask App:
@@ -27,18 +24,36 @@ It succesfully ran and is accessible locally and I ensure this by changing my po
 This is running within the container, and this was verified by refreshing the page and the getting the get responses in our google shell. 
 <img width="883" alt="Screen Shot 2023-11-20 at 10 22 42 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/1af8816f-625e-4480-8755-16de18dd6700">
 
+The container for image 'maliha7' is called "45f198c3f7e79b938940c802caa6920cc6e48f6163c5615c382f88f210778fb7."
+
+
+Additionally I ran multiple commands as well. 
+
+Docker images shows the images I have created, in this case it is just maliha7
+<img width="533" alt="Screen Shot 2023-11-20 at 10 58 14 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/4b3d70c7-09f0-4f43-84e7-98621b848128">
+
+Docker ps also lets us view the containers we have. Here, it shows the container ID, image name, status, ports as well as a name fervent_pascal. 
+
+<img width="877" alt="Screen Shot 2023-11-20 at 10 59 02 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/9fb114eb-9f8b-42ad-a341-8debc0a203a0">
+
+In order to stop this, you write docker stop [container ID].
+<img width="872" alt="Screen Shot 2023-11-20 at 11 04 52 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/dd5124f2-46d2-49f3-babf-306585ae3afa">
+You can confirm that it has stopped by doing docker ps, and it will show you no containers running. In order to get it back up again you just do docker run -d -p and make sure your ports are the same as before. It is now up and running again. You can confirm this by doing docker ps, and it will show the status and generate a new name as well. 
+
+
+
 These are the contents of my Dockerfile and comments.
-## This is the base image which comes from python and uses version 3.7. 
+### This is the base image which comes from python and uses version 3.7. 
 FROM python:3.7-alpine
-## this sets the working directory as /app. 
+### this sets the working directory as /app. 
 WORKDIR /app
-## copies what is in the directory into app container
+### copies what is in the directory into app container
 COPY . /app
-## installs requirements file we need to run this, we have flask in our .txt
+### installs requirements file we need to run this, we have flask in our .txt
 RUN pip install -r requirements.txt
-## Makes port 5000 open
+### Makes port 5000 open and accesible
 EXPOSE 5000
-## CMD signifies the commands needed to run, in this case we are using python in our app.py file
+### CMD signifies the commands needed to run, in this case we are using python in our app.py file
 CMD ["python", "app.py"]
 
 
