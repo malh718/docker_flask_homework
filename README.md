@@ -82,12 +82,20 @@ Time- connected and updates
 
 Once I made sure my flaskapps were running correctly and there were no connection errors, I did docker-compose up --build.
 
+<img width="701" alt="Screen Shot 2023-11-21 at 2 13 04 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/f524b02a-e1cd-41ff-a174-1e2b1af33e0b">
+
+And to get out of this, you do control c ( ^C) which will exit the applications.
+<img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
+
+
+Once you do ^C, to get the apps back up and running you can do docker-compose up.
+
 docker-compose up 
 <img width="1017" alt="Screen Shot 2023-11-21 at 1 40 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/87814790-cdf2-4de5-a9e3-67f6776e0961">
 
-<img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
 
-But for some reason, it wasnt saying running on all addresses. Instead showed one address and there were also some errors with the requirements files. I had gone into the Dockerfile and changed it into reuirements1 and requirements 2 to match the apps, however it was not being recognized and the apps were not running simultaneously.
+
+But for some reason when I was intially runnong docker-compose up build , it wasnt saying running on all addresses. Instead showed one address and there were also some errors with the requirements files. I had gone into the Dockerfile and changed it into reuirements1 and requirements 2 to match the apps, however it was not being recognized and the apps were not running simultaneously.
 From here,I made sure that my files were properly organized and neatly named so as to not run into this issue again. Once I changed those everything ran smoothly and as it should. 
 
 
