@@ -1,6 +1,7 @@
-# docker_flask_homework
+# docker_flask_homework 
+Homework Assignment: Dockerizing Flask Applications
 
-##  Part 1
+#  Part 1-  Docker 
 
 
 1. Setting Up and Dockerizing a Flask App:
