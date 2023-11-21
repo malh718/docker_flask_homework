@@ -37,7 +37,9 @@ Docker ps also lets us view the containers we have. Here, it shows the container
 <img width="877" alt="Screen Shot 2023-11-20 at 10 59 02 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/9fb114eb-9f8b-42ad-a341-8debc0a203a0">
 
 In order to stop this, you write docker stop [container ID].
+
 <img width="872" alt="Screen Shot 2023-11-20 at 11 04 52 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/dd5124f2-46d2-49f3-babf-306585ae3afa">
+
 You can confirm that it has stopped by doing docker ps, and it will show you no containers running. In order to get it back up again you just do docker run -d -p and make sure your ports are the same as before. It is now up and running again. You can confirm this by doing docker ps, and it will show the status and generate a new name as well. 
 
 
