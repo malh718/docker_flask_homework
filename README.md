@@ -8,7 +8,7 @@
 
 1. Setting Up and Dockerizing a Flask App:
    
-First, create your repo, clone it into shell and cd into the correct window. For me it was docker_flask_homework.I went on to make sure the app.py had the code needed for the flask as well as my requirements had flask and my Dockerfile was set up properly so it could containerize the image. Comments are added as well as shown above. 
+First, create your repo, clone it into shell and cd into the correct window. For me it was docker_flask_homework.I went on to make sure the app.py had the code needed for the flask as well as my requirements had flask and my Dockerfile was set up properly so it could containerize the image. Comments are added as well as shown below explaining the dockerfile. 
 
 I went on to build my dockerimage named maliha7$
 <img width="572" alt="Screen Shot 2023-11-20 at 10 27 07 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/05031940-7a4d-404f-b201-19147a21c1f5">
