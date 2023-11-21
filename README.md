@@ -77,8 +77,10 @@ Date - connected and updates (loads to the date)
 
 <img width="480" alt="Screen Shot 2023-11-21 at 1 40 18 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/5201f1d0-43cd-4b87-bab6-9523cf381eff">
 
+
 Time- connected and updates 
 <img width="1013" alt="Screen Shot 2023-11-21 at 1 41 32 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/fbf77bf3-a618-4768-a3a8-1d0bf3a53294">
+
 
 Once I made sure my flaskapps were running correctly and there were no connection errors, I did docker-compose up --build.
 
@@ -101,8 +103,9 @@ From here,I made sure that my files were properly organized and neatly named so 
 
 <img width="988" alt="Screen Shot 2023-11-21 at 1 38 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/f948dcf5-f2de-4d22-ba4e-05b614460cd1">
 
+The way I was able to fix this was by amending my Dockerfile, and from then on it was working properly. 
 
-
+<img width="187" alt="Screen Shot 2023-11-21 at 2 16 57 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/9a1c3193-f1ba-47a1-b0fa-8970a66bcf8e">
 
 
 More commands:
@@ -110,10 +113,10 @@ More commands:
 I am closing it down for the last time wih docker-compose down
 <img width="748" alt="Screen Shot 2023-11-21 at 1 52 42 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/90074107-92ee-4b02-b684-096ce22a145c">
 
-Nice, up and running!
+This was a screenshot taken prior to me closing the apps down. Nice, up and running!
 <img width="953" alt="Screen Shot 2023-11-21 at 1 58 39 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/ac273fbb-017c-49d3-8c9c-246ed968d2e8">
 
-docker-compose down, it cannot connect!
+I entered docker-compose down, it cannot connect! The apps are down. 
 <img width="965" alt="Screen Shot 2023-11-21 at 1 59 27 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/7056cfc2-7495-4364-bb45-3d9d4b59fa51">
 
 
