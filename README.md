@@ -112,6 +112,8 @@ More commands:
 I am closing it down for the last time wih docker-compose down
 <img width="748" alt="Screen Shot 2023-11-21 at 1 52 42 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/90074107-92ee-4b02-b684-096ce22a145c">
 
+In order to list containers, similar to docker you do ps. So it would be docker-compose ps. For docker it is just docker ps. It is the same to remove containers. You do docker-compose rm. 
+
 This was a screenshot taken prior to me closing the apps down. Nice, up and running!
 <img width="953" alt="Screen Shot 2023-11-21 at 1 58 39 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/ac273fbb-017c-49d3-8c9c-246ed968d2e8">
 
