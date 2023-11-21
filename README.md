@@ -65,11 +65,11 @@ EXPOSE 5000
 #### CMD signifies the commands needed to run, in this case we are using python in our app.py file
 CMD ["python", "app.py"]
 
-## Part 2
+## Part 2 Multi-Container Setup with Docker Compose
 
 
 1. Preparing Two Flask Applications:
-   I set up two different folders entitled flask1 and flask2
+   I set up two different folders entitled flask1 and flask2. For flask1, my flaskapp tells you the date. For flask2, the flaskapp tells you the time including the date and time using seconds.
 
 <img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
 
