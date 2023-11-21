@@ -13,6 +13,10 @@ I went on to build my dockerimage named maliha7.
 
 In order to do this, I had to create my app.py run it and all other files(dockerfile and requirements). From here I  did docker build -t maliha 7 .
 
+<img width="870" alt="Screen Shot 2023-11-20 at 11 27 33 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/337c809c-c32f-449b-86a5-d9c3ef19c11d">
+
+After running this, you should have multiple rows of blue code, and this signifies that if it was built and the time it finished.
+
 In this case my image is called maliha7 and a simple error I made in this was initially not adding my space period ( .) after
 
 Subsequently, docker images shows me the image and to run I made sure I was in the correct port and ran the container with the code docker run -p 8005:5000 maliha7. 
