@@ -1,5 +1,4 @@
-# docker_flask_homework 
-Homework Assignment: Dockerizing Flask Applications
+# docker_flask_homework  Homework Assignment: Dockerizing Flask Applications
 
 #  Part 1-  Docker 
 
