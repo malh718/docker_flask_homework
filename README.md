@@ -18,17 +18,21 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 
 I went on to build my dockerimage named maliha7$
+<img width="572" alt="Screen Shot 2023-11-20 at 10 27 07 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/05031940-7a4d-404f-b201-19147a21c1f5">
 
-/Screen Shot 2023-11-20 at 10.27.07 PM.png
 
 In order to do this, I had to create my app.py run it and all other files(dockerfile and requirements). From here I i did docker build -t maliha 7 .
 
 In this case my image is called maliha7 and a simple error I made in this was initially not adding my space period ( .) after
 
 Subsequently, docker images shows me the image and to run I made sure I was in the correct port and ran the container with the code docker run -p 8005:5000 maliha7. 
+<img width="872" alt="Screen Shot 2023-11-20 at 10 21 15 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/244eaf66-10ad-4359-9ac2-0921ca042fa5">
 
 It succesfully ran and is accessible locally and I ensure this by changing my port to 8005. And here it says "Hello, this is the docker homework! From a Flask app in a Docker container!"
+<img width="541" alt="Screen Shot 2023-11-20 at 10 20 51 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/5e931e71-005b-49eb-8208-0b67e5d46e1f">
 
 This is running within the container, and this was verified by refreshing the page and the getting the get responses in our google shell. 
+<img width="883" alt="Screen Shot 2023-11-20 at 10 22 42 PM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/1af8816f-625e-4480-8755-16de18dd6700">
+
 
 
