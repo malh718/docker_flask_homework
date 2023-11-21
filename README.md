@@ -117,6 +117,8 @@ This was a screenshot taken prior to me closing the apps down. Nice, up and runn
 
 I entered docker-compose down, it cannot connect! The apps are down. 
 <img width="965" alt="Screen Shot 2023-11-21 at 1 59 27 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/7056cfc2-7495-4364-bb45-3d9d4b59fa51">
+SUCCESS!!! This indicates that everything was created properly, all files were up and working, and when shut down, the apps no longer run. This indicates things are functioning properly and have worked as they should. Which in this case is exactly what we're looking for. 
+
 
 Errors:
 Other than the errors I faced above, one thing that I would emphasize is making sure all your folders and files are being organized properly and named correctly. It is at this point when things are getting more complicated and there are multiple moving parts, that you have to ensure there are no silly errors and that the code aligns with what the items are named so as to not waste time over simple mistakes. 
