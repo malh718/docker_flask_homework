@@ -65,6 +65,38 @@ EXPOSE 5000
 #### CMD signifies the commands needed to run, in this case we are using python in our app.py file
 CMD ["python", "app.py"]
 
+## Part 2
+
+
+1. Preparing Two Flask Applications:
+   I set up two different folders entitled flask1 and flask2
+
+<img width="794" alt="Screen Shot 2023-11-21 at 1 39 16 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/e004c2f2-63b0-46db-9a4f-92a3f9f4cb6f">
+
+<img width="988" alt="Screen Shot 2023-11-21 at 1 38 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/f948dcf5-f2de-4d22-ba4e-05b614460cd1">
+
+
+docker-compose up 
+<img width="1017" alt="Screen Shot 2023-11-21 at 1 40 41 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/87814790-cdf2-4de5-a9e3-67f6776e0961">
+
+
+Date - connected and updates (loads to the date) 
+<img width="480" alt="Screen Shot 2023-11-21 at 1 40 18 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/5201f1d0-43cd-4b87-bab6-9523cf381eff">
+
+Time- connected and updates 
+<img width="1013" alt="Screen Shot 2023-11-21 at 1 41 32 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/fbf77bf3-a618-4768-a3a8-1d0bf3a53294">
+
+
+More commands:
+
+I am closing it down for the last time wih docker-compose down
+<img width="748" alt="Screen Shot 2023-11-21 at 1 52 42 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/90074107-92ee-4b02-b684-096ce22a145c">
+
+Nice, up and running!
+<img width="953" alt="Screen Shot 2023-11-21 at 1 58 39 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/ac273fbb-017c-49d3-8c9c-246ed968d2e8">
+
+docker-compose down, it cannot connect!
+<img width="965" alt="Screen Shot 2023-11-21 at 1 59 27 AM" src="https://github.com/malh718/docker_flask_homework/assets/102617334/7056cfc2-7495-4364-bb45-3d9d4b59fa51">
 
 
 
