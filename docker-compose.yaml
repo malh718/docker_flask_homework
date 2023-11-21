@@ -1,14 +1,22 @@
+# this is running on version 3 of Docker Compose 
 version: '3'
 services:
+# these represent the containers. In this .yaml file the containers are flask_app_1 and flask_app_2.
   flask_app_1:
+# The build is meant to represent the Docker image, entitled flask1
     build: ./flask1
+    # These show the ports. The host port is the one with the app, so for flask one its 7001.The container is 5000.
     ports:
       - "7001:5000"
     volumes:
+    # This links the flask1 and app, with the container and host.
       - ./flask1:/app
   flask_app_2:
     build: ./flask2
+      # These show the ports. The host port is the one with the app, so for flask2 its 7002. We can access port 5000 using this port. 
+
     ports:
       - "7002:5000"
     volumes:
+# Flask 2 and app are linked together, which means anything happens in one will be mirrored in the other.
       - ./flask2:/app
